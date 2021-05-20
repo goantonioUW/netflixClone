@@ -1,10 +1,42 @@
+.row{
+    margin: 20px;
+}
+
 .row_posters {
     display: flex;
+    /* hides the additional images that dont fit the scren and adds the scroll bar */
+    overflow-y: hidden;
+    overflow-x: scroll;
+}
+
+.row_posters::-webkit-scrollbar{
+    /* removes the visual scrollbar from the page but keeps the functionality */
+    display: none;
 }
 
 .row_poster {
     object-fit: contain;
     width: 100%;
-    max-height: 200px;
+    max-height: 100px;
+    margin-right: 8px;
+    /* This makes a smoother transition for the images to grow */
+    transition: transform 500ms;
 }
 
+.row_poster:hover {
+    /* this is the size that the image will grow to  */
+
+    transform: scale(1.08);
+}
+
+.row_postserLarge {
+    object-fit: contain;
+    max-height: 250px;
+    margin-right: 8px;
+    transition: transform 500ms;
+
+}
+
+.row_postserLarge:hover{
+    transform: scale(1.09);
+}
