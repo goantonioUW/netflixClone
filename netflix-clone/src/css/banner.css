@@ -17,10 +17,11 @@
 }
 
 .banner_description {
-    width: 50rem;
+    font-family: 'Amatic SC', cursive;
+    width: 60rem;
     line-height: 1rem;
     padding-top: 1rem;
-    font-size: .8rem;
+    font-size: 1rem;
     max-width: 300px;
     height: 100px;
 

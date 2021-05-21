@@ -5,8 +5,18 @@
     width: 100%;
     padding: 20px;
     justify-content: space-between;
+    height: 20px;
+    z-index: 1;
 
+    /* Animations for all nav */
+    transition-timing-function: ease-in;
+    transition: all .3s;
 }
+
+.nav_black{
+    background-color: #111;
+}
+
 .nav_logo {
     width: 100px;
     position: fixed;
@@ -17,7 +27,7 @@
 .nav_avitar {
     position: fixed;
     right: 20px;
-    width: 50px;
+    width: 40px;
     object-fit: contain;
 
 }
