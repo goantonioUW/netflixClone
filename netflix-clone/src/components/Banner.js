@@ -28,6 +28,7 @@ function Banner() {
     }
 
     return (
+        
         // adding the different classNames for the divs will help with styling.
         <header className="banner"
             style={{
@@ -50,15 +51,16 @@ function Banner() {
                 <button className="banner_button">Play</button>
                 <button className="banner_button">My List</button>
             </div>
-            {/* description */}
-            <h1 className="banner_description">
-                {/* The truncate string will keep the description to 200 characters and add an ellipsis */}
-                {truncate(movie?.overview, 200)}
-            </h1>
-
-            <div className="fadeBottom"></div>
+                {/* description */}
+                <h1 className="banner_description">
+                    {/* The truncate string will keep the description to 200 characters and add an ellipsis */}
+                    {truncate(movie?.overview, 200)}
+                </h1>
             </div>
+            
+            <div className="banner--fadeBottom"></div>
         </header>
+
     )
 }
 

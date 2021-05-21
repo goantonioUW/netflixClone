@@ -48,12 +48,14 @@
 
 
 /* This gives a fade effect to blend the top banner with the main content */
-.banner_fadeBottom{
-    height: 7.4rem; 
+.banner--fadeBottom{
+    height: 9.5rem; 
     background-image: linear-gradient(
-        200deg,
+        180deg,
         transparent,
-        rgba(37, 37, 37, .067),
-        #33333380
-    );
+        rgba(37, 37,37, .61),
+        #111
+        );
+    bottom: 0;
+
 }
